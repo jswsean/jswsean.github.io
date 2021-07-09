@@ -1,18 +1,48 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		* {
+		  box-sizing: border-box;
+		}
+
+		/* Create 25-75% columns of which the the left column floats */
+		.column {
+		  float: left;
+		}
+		
+		.left {
+			width: 25%;
+		}
+		
+		.right {
+		  width: 75%;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+		
+	</style>
+</head>
+
 <body>
-<div class="row">
-	<div class="column">
-	<h1>Sean Hambali</h1>
-	<ul>
-	<li>Stata Schemes</li>
-	</ul>
+
+	<div class="row">
+	  <div class="column" style="background-color:#FFFFFF;">
+		<h2>Sean Hambali</h2>
+		<ul style="list-style-type:none;">
+		  <li>Stata Graph Schemes</li>
+		</ul>  
+	  </div>
+	  <div class="column" style="background-color:#FFFFFF;">
+		<p>This is my public website.</p>
+	  </div>
 	</div>
 
-	<div class="column">
-	<p>This is my public webpage. There are several files that can be downloaded from my page: </p>
-	</div>
-
-</div>
 </body>
 </html>
